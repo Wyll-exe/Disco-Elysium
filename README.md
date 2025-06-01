@@ -1,2 +1,2 @@
 # Disco-Elysium
-lean
+
