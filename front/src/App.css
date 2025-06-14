@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+body {
+    cursor: url('/assets/cursors/wii/default.cur'), auto;
+}
+
+*:active {
+    cursor: url('assets/cursors/wii/wii-grab.cur'), pointer;
+ }
