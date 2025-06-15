@@ -7,3 +7,12 @@ body {
 *:active {
     cursor: url('assets/cursors/wii/wii-grab.cur'), pointer;
  }
+
+.button-click {
+    cursor: url('assets/cursors/wii/wii-move-ccw.cur'), pointer;
+ }
+
+
+ .div-hover {
+    cursor: url('assets/cursors/wii/wii-open-ccw.cur'), auto;
+ }

@@ -47,21 +47,33 @@ function App() {
       </div>
       {/* https://www.youtube.com/watch?v=AypW_6o26hg&list=PLfzAS9vre2a_YQ6lLPHlS4K0sDFwIoWeD&index=45 */}
       <div className="absolute bottom-0 left-0 w-full flex justify-center mb-8">
-        <div className="bg-amber-500 w-[300px] h-[70px] z-50 flex items-center justify-around rounded-lg shadow-lg">
-          <button
-            className=""
-            onClick={handleStart}
-          >
-            START
-          </button>
-          <button
-            className=""
-            onClick={handleQuit}
-          >
-            QUIT
-          </button>
-        </div>
-      </div>
+  <div className=" w-[300px] h-[110px] z-50 flex flex-col items-center justify-center rounded-lg shadow-lg gap-4 opacity-80 div-hover">
+    {/* START */}
+    <button
+      className="relative  text-white px-6 py-2 rounded hover:bg-black button-click"
+      onClick={handleStart}
+    >
+      START
+      <img
+        src="/assets/images/hand.png"
+        alt=""
+        className="ml-2 w-8 h-8 opacity-0 group-hover:opacity-100 z-111 transition duration-200 absolute right-[-40px] top-1/2 -translate-y-1/2 pointer-events-none"
+      />
+    </button>
+    {/* QUIT */}
+    <button
+      className="relative  text-white px-6 py-2 rounded hover:bg-black button-click"
+      onClick={handleQuit}
+    >
+      QUIT
+      <img
+        src="/assets/images/hand.png"
+        alt=""
+        className="ml-2 w-8 h-8 opacity-0 group-hover:opacity-100 transition duration-200 absolute right-[-40px] top-1/2 -translate-y-1/2 pointer-events-none"
+      />
+    </button>
+  </div>
+</div>
     </div>
   )
 }
