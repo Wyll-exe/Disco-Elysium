@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import '../App.css'
-
+import { useNavigate } from 'react-router-dom'
 
 function Menu() {
 
+const navigate = useNavigate()
 
 const videos = ["/assets/videos/beach.mp4", "/assets/videos/chromatic.mp4"]
   // Random background 
@@ -53,7 +54,7 @@ const videos = ["/assets/videos/beach.mp4", "/assets/videos/chromatic.mp4"]
     {/* START */}
     <button
       className="relative  text-white px-6 py-2 rounded hover:bg-black button-click"
-      onClick={handleStart}
+      onClick={() => navigate('/Start')}
     >
       START
       <img
