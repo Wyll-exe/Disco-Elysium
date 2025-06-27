@@ -1,5 +1,7 @@
 import '../App.css'
 import '/assets/videos/bluee.mp4'
+
+
 function Start() {
 
     return (
@@ -13,10 +15,40 @@ function Start() {
             </video>
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20 pointer-events-none z-10"></div>
 
+            {/* Save files */}
             <div className="relative z-10 flex flex-col items-center justify-center h-screen gap-8">
-                <div className="bg-black w-3/4 h-1/4 rounded-lg"></div>
-                <div className="bg-black w-3/4 h-1/4 rounded-lg"></div>
-                <div className="bg-black w-3/4 h-1/4 rounded-lg"></div>
+
+               <div className="relative flex w-3/4 max-w-xl">
+  
+  <div className="group relative bg-gradient-to-br from-gray-900 to-gray-800 border-4 border-amber-400 rounded-xl shadow-xl flex-1 flex items-center px-8 py-6 gap-6 transition duration-300 hover:border-amber-300 hover:shadow-2xl hover:scale-105 cursor-pointer">
+    <div className="flex-1">
+      <div className="text-2xl font-bold text-amber-300 drop-shadow">SAVE 01</div>
+      <div className="text-gray-300 text-sm">Fev 20, 07:38</div>
+    </div>
+    <button className="bg-amber-400 text-gray-900 font-bold px-4 py-2 rounded-lg shadow hover:bg-amber-300 transition">
+      LOAD
+    </button>
+
+    
+    <img
+      src="/assets/images/image.png"
+      alt="gauche"
+      className="absolute right-full top-1/2 -translate-y-1/2 mr-4 w-24 h-24 blink-on-hover"
+      style={{ zIndex: 20 }}
+    />
+  </div>
+</div>
+
+
+
+
+
+
+
+
+                <div className="bg-black w-3/4 h-1/4 rounded-lg"> EMPTY </div>
+
+                <div className="bg-black w-3/4 h-1/4 rounded-lg"> EMPTY</div>
             </div>
         </div>
     )

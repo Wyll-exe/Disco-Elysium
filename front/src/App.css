@@ -16,3 +16,25 @@ body {
  .div-hover {
     cursor: url('assets/cursors/wii/wii-open-ccw.cur'), auto;
  }
+
+
+ @keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.blink-on-hover {
+  opacity: 0;
+  pointer-events: none;
+  animation: none;
+  transition: opacity 0.2s ease;
+}
+
+.group:hover .blink-on-hover {
+  animation: blink 0.8s infinite;
+  opacity: 1;
+}
