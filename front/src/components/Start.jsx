@@ -20,7 +20,7 @@ function Start() {
 
                <div className="relative flex w-3/4 max-w-xl">
   
-  <div className="group relative bg-gradient-to-br from-gray-900 to-gray-800 border-4 border-amber-400 rounded-xl shadow-xl flex-1 flex items-center px-8 py-6 gap-6 transition duration-300 hover:border-amber-300 hover:shadow-2xl hover:scale-105 cursor-pointer">
+  <div className="group relative bg-gradient-to-br from-orange-300 to-gray-800 border-4 border-orange-400 rounded-xl shadow-xl flex-1 flex items-center px-8 py-6 gap-6 transition duration-300 hover:border-amber-300 hover:shadow-2xl hover:scale-105 cursor-pointer">
     <div className="flex-1">
       <div className="text-2xl font-bold text-amber-300 drop-shadow">SAVE 01</div>
       <div className="text-gray-300 text-sm">Fev 20, 07:38</div>
