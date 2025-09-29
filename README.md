@@ -13,3 +13,5 @@ cd front
 npm i
 npm run dev
 ```
+
+Une lettre d'amour pour Disco Elysium !
