@@ -1,8 +1,11 @@
 import '../App.css'
 import '/assets/videos/bluee.mp4'
+import { useNavigate } from 'react-router-dom'
 
-
+// Page de sauvegarde
 function Start() {
+
+  const navigate = useNavigate()
 
   return (
     <div className='absolute top-0 left-0 w-full min-h-screen '>
@@ -24,9 +27,13 @@ function Start() {
           <div className="group relative bg-gradient-to-br from-orange-300 to-blue-400 border-4 border-orange-400 rounded-xl shadow-xl flex-1 flex items-center px-8 py-6 gap-6 transition duration-300 hover:border-amber-300 hover:shadow-2xl hover:scale-105 div-hover">
             <div className="flex-1">
               <div className="text-2xl font-bold text-amber-300 drop-shadow">SAVE 01</div>
-              <div className="text-gray-300 text-sm">Fev 20, 06:38</div>
+              <div className="text-black-300 text-sm mt-3">
+                Fev 20, 06:38</div>
+
             </div>
-            <button className="bg-blue-300 text-gray-900 font-bold px-4 py-2 rounded-lg shadow hover:bg-amber-300 transition button-click">
+            <button
+              className="bg-blue-300 text-gray-900 font-bold px-4 py-2 rounded-lg shadow hover:bg-amber-300 transition button-click"
+              onClick={() => navigate('/Skills')}>
               LOAD
             </button>
 

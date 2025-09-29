@@ -27,7 +27,7 @@ const videos = ["/assets/videos/beach.mp4", "/assets/videos/chromatic.mp4"]
 
     // START -> SAVE page
   const handleStart = () => {
-      alert('START !');
+      alert('START !!');
     };
 
     // QUIT
